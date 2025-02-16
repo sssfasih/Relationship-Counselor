@@ -4,7 +4,7 @@ from sentence_transformers import SentenceTransformer
 from openai import OpenAI
 
 # Initialize OpenAI API
-api_key = "f614cad0fabe42bd8f287a921066b771"  # Replace with your API key
+api_key = ""  # Replace with your API key
 base_url = "https://api.aimlapi.com/v1"
 api = OpenAI(api_key=api_key, base_url=base_url)
 
