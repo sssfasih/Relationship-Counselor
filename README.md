@@ -1,6 +1,6 @@
 # 💬 AI Relationship Advisor
 
-![AI Relationship Counsellor](digital_illustration.png)
+<img src="digital-illustration.png" alt="AI Relationship Counsellor" width="500"/>
 
 This is an AI-powered relationship counselling app built using **Streamlit** and deployed on **Hugging Face Spaces**. It leverages **Retrieval-Augmented Generation (RAG)** to provide contextual, personalized, and insightful advice based on WhatsApp chat uploads and user questions.
 
@@ -28,19 +28,56 @@ This is an AI-powered relationship counselling app built using **Streamlit** and
 
 ---
 
-## Installation & Running Locally
 
-To run this app locally, install the dependencies and start the Streamlit server:
+## 🧪 Installation & Local Run
+
+Clone the repo and install dependencies:
 
 ```bash
 pip install -r requirements.txt
+```
+
+Set your Groq API key (via terminal or `.env`):
+
+```bash
+export GROQ_API="your_api_key_here"
+```
+
+Then run the app:
+
+```bash
 streamlit run app.py
 ```
 
-## Deployment
+---
 
-This app is deployed on Hugging Face Spaces and can be accessed [here](https://huggingface.co/spaces/sssfasihieee/RelationshipCounsellor).
+## 🌐 Deployment
+
+This app is deployed on Hugging Face Spaces:  
+👉 [RelationshipCounsellor on Hugging Face](https://huggingface.co/spaces/sssfasihieee/RelationshipCounsellor)
+
+To deploy your own:
+
+1. Push to a Hugging Face Space with `Streamlit` runtime.
+2. Set your `GROQ_API` secret via **Settings > Secrets**.
+
+Reference:  
+📖 https://huggingface.co/docs/hub/spaces-config-reference
 
 ---
 
-Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
+## 🔐 Environment Variables
+
+| Variable     | Description            |
+|--------------|------------------------|
+| `GROQ_API`   | Your Groq API key      |
+
+---
+
+## 📌 License
+
+MIT License. Feel free to fork and improve!
+
+---
+
+> Built with ❤️ by Syed Fasih Uddin  
