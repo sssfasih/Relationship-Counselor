@@ -1,26 +1,32 @@
-# Relationship Advisor
+# 💬 AI Relationship Advisor
 
-This is an AI-powered relationship counselling app deployed on Hugging Face Spaces using Streamlit. The app leverages Retrieval-Augmented Generation (RAG) to provide insightful and context-aware relationship advice based on user queries.
+![AI Relationship Counsellor](digital_illustration.png)
 
-## Features
+This is an AI-powered relationship counselling app built using **Streamlit** and deployed on **Hugging Face Spaces**. It leverages **Retrieval-Augmented Generation (RAG)** to provide contextual, personalized, and insightful advice based on WhatsApp chat uploads and user questions.
 
-Upload Documents: Users can upload plain text files containing relationship concerns, chat logs, or journal entries.
 
-Contextual Understanding: Uses FAISS for efficient similarity search and Sentence Transformers for embedding text.
+---
 
-User-Friendly Interface: Built with Streamlit for an interactive and easy-to-use experience.
+## 🚀 Features
 
-## Technologies Used
+- **📄 Upload WhatsApp Chats:** Upload `.txt` chat files for analysis.
+- **🧠 RAG-Powered Contextual Answers:** Uses FAISS and Sentence Transformers to ground AI responses in real chat context.
+- **🤖 LLM-Based Insights:** AI analyzes red flags, toxic behavior, and relationship health using **Groq’s LLaMA 3.3-70B Versatile** model.
+- **🖼️ Clean UI:** Built with Streamlit for an interactive and smooth user experience.
 
-Streamlit: Web framework for interactive UI.
+---
 
-FAISS: Vector search for efficient document retrieval.
+## 🛠️ Tech Stack
 
-Sentence Transformers: Embedding model (all-MiniLM-L6-v2) for text representation.
+| Technology | Purpose |
+|------------|---------|
+| **Streamlit** | UI framework |
+| **FAISS (CPU)** | Vector search for semantic retrieval |
+| **Sentence Transformers** | Embedding generation (`all-MiniLM-L6-v2`) |
+| **Groq API** | Fast, low-latency inference with `llama-3.3-70b-versatile` |
+| **Hugging Face Spaces** | Deployment platform |
 
-OpenAI API: Queries an AI model (Deepseek) for generating advice.
-
-Hugging Face Spaces: Deployment platform.
+---
 
 ## Installation & Running Locally
 
